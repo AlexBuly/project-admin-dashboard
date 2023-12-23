@@ -1,11 +1,7 @@
-.super-cool,
-.less-cool,
-.impossible,
-.easy,
-.ad-blocker,
-.money-maker,
-.announcements {
+.card {
     border: 1px solid black;
+    background-color: white;
+    border-left: 3px solid sandybrown;
 }
 
 .main {
@@ -18,6 +14,13 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: rgb(50, 129, 233);
+    color: white;
+    font-weight: bold;
 }
 
 .row-1 {
@@ -52,8 +55,20 @@ input {
     width: 100%;
 }
 
+.main-content {
+    background-color: rgb(221, 221, 221);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.projects {
+    grid-column: 1 / -1;
+}
+
 .announcements {
     grid-column: 3;
+    background-color: rgb(221, 221, 221);
 }
 
 .buttons {
