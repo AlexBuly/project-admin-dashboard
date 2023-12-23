@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 .card {
     border: 1px solid black;
     background-color: white;
@@ -6,7 +14,9 @@
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    position: relative;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 0;
 }
 
 .header {
@@ -21,6 +31,7 @@
     background-color: rgb(50, 129, 233);
     color: white;
     font-weight: bold;
+    padding: 1em;
 }
 
 .row-1 {
@@ -48,11 +59,16 @@
     align-items: center;
 }
 
+.row-2 p {
+    margin-left: 2em;
+}
+
 input {
     border-radius: 30px;
     background-color: rgb(221, 221, 221);
     border: none;
     width: 100%;
+    margin-left: 2em;
 }
 
 .main-content {
@@ -74,12 +90,13 @@ input {
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-self: center;
+    gap: 2em;
 }
 
 button {
-    width: 90px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 9px;
     padding-bottom: 9px;
     border-radius: 15px;
