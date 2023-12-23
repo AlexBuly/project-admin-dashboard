@@ -14,7 +14,7 @@
 }
 
 .header {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -45,7 +45,32 @@
     align-items: center;
 }
 
+input {
+    border-radius: 30px;
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 100%;
+}
+
 .announcements {
     grid-column: 3;
 }
 
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    width: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(50, 129, 233);
+    font-weight: bold;
+
+}
