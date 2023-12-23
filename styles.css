@@ -10,16 +10,21 @@ body {
     border: 1px solid black;
     background-color: white;
     border-left: 3px solid sandybrown;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .main {
     display: grid;
-    position: relative;
+    position: absolute;
     grid-template-columns: 1fr 3fr 1fr;
     margin: 0;
+    height: 100%;
 }
 
 .header {
+    margin: 0;
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -61,6 +66,10 @@ body {
 
 .row-2 p {
     margin-left: 2em;
+}
+
+.row-2 span {
+    font-size: larger;
 }
 
 input {
