@@ -12,6 +12,7 @@ body {
     margin-bottom: 2em;
     margin-left: 1em;
     margin-right: 1em;
+    border-radius: 5px;
 }
 
 form {
