@@ -118,8 +118,9 @@ input {
     background-color: rgb(221, 221, 221);
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-template-rows: 1fr 13fr;
-    gap: 15px;
+    grid-template-rows: 1fr 7fr 7fr 7fr;
+    gap: 1em;
+    
 }
 
 .projects {
@@ -133,7 +134,10 @@ input {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
 
+.col-3 p {
+    margin: 0;
 }
 
 .announcements {
