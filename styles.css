@@ -111,6 +111,15 @@ ul {
     grid-column: 1 / -1;
 }
 
+button:hover {
+    background-color: rgb(38, 98, 177);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(23, 71, 134);
+}
+
 .search {
     align-self: center;
 }
@@ -118,10 +127,6 @@ ul {
 .row-1 p {
     justify-self: center;
     gap: 1.5em;
-}
-
-.buttons {
-    grid-column: 2;
 }
 
 .row-2 {
@@ -246,6 +251,7 @@ input {
     grid-template-columns: repeat(3, 1fr);
     place-self: center;
     gap: 2em;
+    grid-column: 2;
 }
 
 button {
