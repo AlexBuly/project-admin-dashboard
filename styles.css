@@ -47,7 +47,7 @@ form {
     background-color: rgb(50, 129, 233);
     color: white;
     font-weight: bold;
-    padding: 1em;
+    padding-left: 1em;
 }
 
 
@@ -58,7 +58,7 @@ h2 {
 ul {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 7fr;
     align-items: center;
     gap: 1em;
     padding-left: 0;
@@ -124,6 +124,7 @@ input {
 
 .projects {
     grid-column: 1 / -1;
+    margin: 2em 0 1em 1em;
 
 }
 
@@ -145,6 +146,11 @@ input {
     font-size: smaller;
 }
 
+.heading {
+    font-size: 16px;
+    margin: 2em 0 1em 1em;
+}
+
 .box-top {
     background-color: white;
     padding: 1em 2em 1em 2em;
@@ -155,6 +161,9 @@ input {
     background-color: white;
     padding: 1em 2em 1em 2em;
     margin: 0 2em 0 1em;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
 }
 
 .buttons {
@@ -174,5 +183,4 @@ button {
     color: white;
     background-color: rgb(50, 129, 233);
     font-weight: bold;
-
 }
