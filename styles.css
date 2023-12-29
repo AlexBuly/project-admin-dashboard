@@ -196,20 +196,26 @@ input {
     background-color: white;
     padding: 1em 2em 1em 2em;
     margin: 0 2em 0 1em;
+    border-radius: 5px;
 }
 
 .box-top:nth-child(4) {
     box-shadow: var(--box-shadow)
 }
 
+.heading-two {
+    margin-left: 1em;
+}
+
 .box-bottom {
     background-color: white;
-    padding: 1em 2em 1em 2em;
-    margin: 0 2em 0 1em;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 2em 0 1em;
     display: grid;
     grid-template-rows: repeat(4, 1fr);;
-    gap: 1em;
+    gap: 2em;
     box-shadow: var(--box-shadow);
+    border-radius: 5px;
 }
 
 .penguin {
