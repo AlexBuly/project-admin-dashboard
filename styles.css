@@ -28,6 +28,23 @@ form {
     height: 100%;
 }
 
+.camel-large {
+    height: 50px;
+    background-color: rgb(245, 236, 221);
+    border-radius: 50%;
+}
+
+.camel-small {
+    height: 30px;
+    background-color: rgb(245, 236, 221);
+    border-radius: 50%;
+}
+
+.col-1 {
+    display: flex;
+    margin-left: 1em;
+}
+
 .header {
     margin: 0;
     grid-column: 2 / -1;
@@ -42,12 +59,24 @@ form {
     gap: 2em;
 }
 
+.dashboard {
+    width: 40px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(98deg) brightness(107%) contrast(102%);
+}
+
 .sidebar {
     grid-row: 1 / 3;
     background-color: rgb(50, 129, 233);
     color: white;
     font-weight: bold;
     padding-left: 1em;
+    padding-right: 1em;
+}
+
+.sidebar h2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 
@@ -81,6 +110,7 @@ ul {
 
 .row-1 p {
     justify-self: center;
+    gap: 1.5em;
 }
 
 .buttons {
@@ -95,7 +125,7 @@ ul {
 }
 
 .row-2 p {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .row-2 span {
@@ -118,8 +148,12 @@ input {
     background-color: rgb(221, 221, 221);
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-template-rows: 1fr 4fr 4fr 4fr;
-    
+    grid-template-rows: 1fr 4fr 4fr 4fr;   
+}
+
+.main-content a {
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
 .projects {
@@ -162,8 +196,30 @@ input {
     padding: 1em 2em 1em 2em;
     margin: 0 2em 0 1em;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);;
     gap: 1em;
+}
+
+.penguin {
+    background-color: rgb(184, 184, 184);
+    height: 30px;
+    border-radius: 50%;
+}
+
+.whale {
+    background-color: rgb(111, 111, 253);
+    height: 30px;
+    border-radius: 50%;
+}
+
+.cow {
+    background-color: orange;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.name {
+    display: flex;
 }
 
 .buttons {
